@@ -1,0 +1,51 @@
+.section--team {
+  background-color: $accent-light-color;
+}
+
+.grid-team {
+  @media screen and (min-width: 1200px) {
+    @include grid(4);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    @include grid(2);
+  }
+
+  @media screen and (max-width: 767.98px) {
+    @include grid(1);
+  }
+}
+
+.team-member {
+  padding: 30px 0 30px 0;
+  text-align: center;
+  background: $main-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.team-member__title {
+  margin-bottom: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+.team-member__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $accent-text-color;
+}

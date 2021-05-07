@@ -1,0 +1,26 @@
+@import './utils/_variables';
+@import './utils/_placeholders';
+@import './utils/mixin';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/_body';
+@import './components/form';
+@import './components/_logo';
+@import './components/_main-button';
+@import './components/_menu-burger';
+@import './components/_social-icons';
+@import './components/_modal';
+
+@import './layouts/section';
+@import './layouts/page-header';
+@import './layouts/navigation';
+@import './layouts/hero';
+@import './layouts/benefits';
+@import './layouts/card';
+@import './layouts/clients';
+@import './layouts/team';
+@import './layouts/footer';
+@import './layouts/nav-portfolio';
+@import './layouts/portfolio-content';

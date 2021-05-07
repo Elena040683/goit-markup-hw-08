@@ -1,0 +1,67 @@
+.subscribe {
+  @media screen and (min-width: 1199.98px) {
+    margin-left: 93px;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+
+  @media screen and (max-width: 1199.98px) {
+    flex-direction: column;
+  }
+}
+
+.subscribe__input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $accent-color;
+  border-radius: 4px;
+  margin-right: 12px;
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199.98px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    width: 450px;
+    height: 50px;
+  }
+}
+
+.subscribe__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 10px 28px 10px 29px;
+  min-width: 200px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $main-color;
+  background-color: $brand-color;
+  cursor: pointer;
+
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe__icon {
+  width: 24px;
+  height: 24px;
+  fill: $main-color;
+  margin-left: 10px;
+}
