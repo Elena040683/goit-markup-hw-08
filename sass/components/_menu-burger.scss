@@ -6,7 +6,7 @@
   background-color: transparent;
   z-index: 5;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767.98px) {
     display: none;
   }
 
@@ -15,7 +15,7 @@
   }
 
   &.is-open {
-    position: absolute;
+    position: fixed;
     top: 21px;
     right: 25px;
   }
@@ -34,13 +34,15 @@
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: $main-color;
   flex-direction: column;
+  justify-content: space-between;
   padding: 48px 0 48px 40px;
   transition-duration: 250ms;
 

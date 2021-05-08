@@ -236,7 +236,7 @@ body {
   z-index: 5;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767.98px) {
   .mobile-menu-btn {
     display: none;
   }
@@ -247,7 +247,7 @@ body {
 }
 
 .mobile-menu-btn.is-open {
-  position: absolute;
+  position: fixed;
   top: 21px;
   right: 25px;
 }
@@ -266,13 +266,15 @@ body {
 
 .menu-container {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: #ffffff;
   flex-direction: column;
+  justify-content: space-between;
   padding: 48px 0 48px 40px;
   transition-duration: 250ms;
 }
@@ -427,27 +429,10 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .modal {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    max-width: 450px;
-    width: 100%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .modal {
-    width: 450px;
-    height: 609px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .modal {
-    height: 581px;
+    min-width: 450px;
+    min-height: 609px;
   }
 }
 
@@ -585,6 +570,20 @@ body {
   border: 2px solid #212121;
   border-radius: 4px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .check__icon {
+    top: 75.7%;
+    left: 65px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .check__icon {
+    top: 75.7%;
+    left: 35px;
+  }
 }
 
 .check__link {
