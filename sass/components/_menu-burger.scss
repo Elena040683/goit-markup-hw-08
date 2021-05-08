@@ -41,7 +41,7 @@
   height: 100vh;
   background-color: $main-color;
   flex-direction: column;
-  padding: 48px 40px;
+  padding: 48px 0 48px 40px;
   transition-duration: 250ms;
 
   &.is-open {
@@ -112,9 +112,4 @@
   font-size: 18px;
   line-height: 1.2;
   color: $brand-color;
-}
-
-.mobile-wrap {
-  position: absolute;
-  bottom: 48px;
 }

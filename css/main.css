@@ -273,7 +273,7 @@ body {
   height: 100vh;
   background-color: #ffffff;
   flex-direction: column;
-  padding: 48px 40px;
+  padding: 48px 0 48px 40px;
   transition-duration: 250ms;
 }
 
@@ -341,11 +341,6 @@ body {
   font-size: 18px;
   line-height: 1.2;
   color: #2196f3;
-}
-
-.mobile-wrap {
-  position: absolute;
-  bottom: 48px;
 }
 
 .social-icons {
@@ -639,7 +634,6 @@ body {
 }
 
 .page-header {
-  display: flex;
   border-bottom: 1px solid #ececec;
 }
 
