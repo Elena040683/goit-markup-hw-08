@@ -4,7 +4,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 5;
+  z-index: 105;
 
   @media screen and (min-width: 767.98px) {
     display: none;
@@ -35,7 +35,8 @@
 .menu-container {
   display: none;
   position: fixed;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -45,6 +46,7 @@
   justify-content: space-between;
   padding: 48px 0 48px 40px;
   transition-duration: 250ms;
+  z-index: 100;
 
   &.is-open {
     display: block;
@@ -62,6 +64,18 @@
   &--active {
     color: $brand-color;
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 20px;
+  }
 }
 
 .mobile-menu__item,
@@ -70,6 +84,8 @@
 }
 
 .mobile-contacts {
+  margin-top: auto;
+  display: block;
   margin-bottom: 64px;
 }
 
@@ -78,6 +94,18 @@
   font-size: 34px;
   line-height: 1.18;
   color: $brand-color;
+
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 20px;
+  }
 }
 
 .mobile-contacts__link-mail {
@@ -85,6 +113,18 @@
   font-size: 24px;
   line-height: 1.17;
   color: $accent-text-color;
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 10px;
+  }
 }
 
 .mobile-social-list {
@@ -114,8 +154,16 @@
   font-size: 18px;
   line-height: 1.2;
   color: $brand-color;
-}
 
-.mobile-wrap {
-  margin-top: 250px;
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 8px;
+  }
 }
