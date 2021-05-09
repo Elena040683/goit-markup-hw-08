@@ -31,6 +31,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
+  height: 581px;
   padding: 40px;
   background-color: $main-color;
   border-radius: 4px;
@@ -40,11 +41,6 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 1199.98px) {
-    max-width: 450px;
-    width: 100%;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     width: 450px;
     height: 609px;
   }
@@ -75,11 +71,6 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: $main-text-color;
-}
-
-.modal__wrap {
-  display: flex;
-  flex-direction: column;
 }
 
 .modal__label {
@@ -179,8 +170,8 @@
 
 .check__icon {
   position: absolute;
-  top: 75.5%;
-  left: 44px;
+  top: 67%;
+  left: 22px;
   width: 16px;
   height: 15px;
   border: 2px solid $main-text-color;
@@ -193,8 +184,8 @@
   }
 
   @media screen and (max-width: 767.98px) {
-    top: 75.7%;
-    left: 35px;
+    top: 74.5%;
+    left: 23px;
   }
 }
 

@@ -277,7 +277,9 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   z-index: 1;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
   padding: 48px 0 48px 40px;
   background-color: #ffffff;
   opacity: 0;
@@ -503,6 +505,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
+  height: 581px;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -511,13 +514,6 @@ body {
 }
 
 @media screen and (max-width: 1199.98px) {
-  .modal {
-    max-width: 450px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -549,11 +545,6 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-}
-
-.modal__wrap {
-  display: flex;
-  flex-direction: column;
 }
 
 .modal__label {
@@ -652,8 +643,8 @@ body {
 
 .check__icon {
   position: absolute;
-  top: 75.5%;
-  left: 44px;
+  top: 67%;
+  left: 22px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
@@ -670,8 +661,8 @@ body {
 
 @media screen and (max-width: 767.98px) {
   .check__icon {
-    top: 75.7%;
-    left: 35px;
+    top: 74.5%;
+    left: 23px;
   }
 }
 
